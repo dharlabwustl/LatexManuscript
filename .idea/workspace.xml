@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e9caab5-7bfb-4871-b083-1303e95e0670" name="Changes" comment="Latex">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/snipr_for_rsna_v1_1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/snipr_for_rsna_v1_1.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/snipr_for_rsna_v1_1.tex" beforeDir="false" afterPath="$PROJECT_DIR$/snipr_for_rsna_v1_1.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +60,15 @@
       <option name="project" value="LOCAL" />
       <updated>1698782806494</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Latex">
+      <option name="closed" value="true" />
+      <created>1698849687676</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698849687676</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
