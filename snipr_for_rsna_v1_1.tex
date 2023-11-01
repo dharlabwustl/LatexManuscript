@@ -485,7 +485,60 @@ fill=green!30, align=center, font=\linespread{0.8}\selectfont\bfseries]
         \node (image2_boundary) [rectangle,line width=1mm,fill=black] at (0,0){};
     \end{tikzpicture}
 }
+\newsavebox\sahclusterthree\sbox\sahclusterthree{
+    \begin{tikzpicture}
 
+        \node (image1) [scale=1,inner sep = 0pt] at (0,0)  { \includegraphics[width=0.5\textwidth,height=0.5\textwidth]{../images/SAH_30_image1_forcluster.jpg}};
+
+        \node (image2) [scale=1, right=of image1, inner sep = 0pt,xshift=-20,yshift=1]  { \scalebox{-1}[1]{\includegraphics[width=0.5\textwidth,height=0.5\textwidth]{../images/SAH_30_image2_forcluster.jpg}}};
+        %ICH_0019_CT_20170123_AXIAL.png}};
+
+        \node (image3) [scale=1, below=of image1, inner sep = 0pt,xshift=0,yshift=25] { \includegraphics[width=0.5\textwidth,height=0.5\textwidth]{../images/SAH_30_image3_forcluster.jpg
+        }};
+
+        \node (image4) [scale=1, below=of image2,  inner sep = 0pt,yshift=24]   { \includegraphics[width=0.5\textwidth,height=0.5\textwidth]{../images/SAH_30_05032014_1439_2_11.jpg}};
+
+
+        \node (image2_boundary) [rectangle,line width=2mm,draw=blue!50, fit={(image1)(image2)(image3)(image4)}] {};
+        \node (image2_boundary) [rectangle,line width=1mm,fill=black] at (0,0){};
+    \end{tikzpicture}
+}
+\newsavebox\sahclusterone\sbox\sahclusterone{
+    \begin{tikzpicture}
+
+        \node (image1) [scale=1,inner sep = 0pt] at (0,0)  { \includegraphics[width=0.5\textwidth,height=0.5\textwidth]{../images/SAH_231_image1_forcluster.jpg}};
+
+        \node (image2) [scale=1, right=of image1, inner sep = 0pt,xshift=-20,yshift=1]  { \scalebox{-1}[1]{\includegraphics[width=0.5\textwidth,height=0.5\textwidth]{../images/SAH_231_image2_forcluster.png}}};
+        %ICH_0019_CT_20170123_AXIAL.png}};
+
+        \node (image3) [scale=1, below=of image1, inner sep = 0pt,xshift=0,yshift=25] { \includegraphics[width=0.5\textwidth,height=0.5\textwidth]{../images/SAH_231_image3_forcluster.png
+        }};
+
+        \node (image4) [scale=1, below=of image2,  inner sep = 0pt,yshift=24]   { \includegraphics[width=0.5\textwidth,height=0.5\textwidth]{../images/SAH_231_nifit.jpg}};
+
+
+        \node (image2_boundary) [rectangle,line width=2mm,draw=blue!50, fit={(image1)(image2)(image3)(image4)}] {};
+        \node (image2_boundary) [rectangle,line width=1mm,fill=black] at (0,0){};
+    \end{tikzpicture}
+}
+\newsavebox\sahclustertwo\sbox\sahclustertwo{
+    \begin{tikzpicture}
+
+        \node (image1) [scale=1,inner sep = 0pt] at (0,0)  { \includegraphics[width=0.5\textwidth,height=0.5\textwidth]{../images/SAH_232_image4_forcluster.jpg}};
+
+        \node (image2) [scale=1, right=of image1, inner sep = 0pt,xshift=-20,yshift=1]  { \scalebox{-1}[1]{\includegraphics[width=0.5\textwidth,height=0.5\textwidth]{../images/SAH_232_image2_forcluster.jpg}}};
+        %ICH_0019_CT_20170123_AXIAL.png}};
+
+        \node (image3) [scale=1, below=of image1, inner sep = 0pt,xshift=0,yshift=25] { \includegraphics[width=0.5\textwidth,height=0.5\textwidth]{../images/SAH_232_image3_forcluster.jpg
+        }};
+
+        \node (image4) [scale=1, below=of image2,  inner sep = 0pt,yshift=24]   { \includegraphics[width=0.5\textwidth,height=0.5\textwidth]{../images/SAH_232_image1_forcluster.jpg}};
+
+
+        \node (image2_boundary) [rectangle,line width=2mm,draw=blue!50, fit={(image1)(image2)(image3)(image4)}] {};
+        \node (image2_boundary) [rectangle,line width=1mm,fill=black] at (0,0){};
+    \end{tikzpicture}
+}
 %infarct cohort clusters combination
 
 
@@ -608,6 +661,26 @@ fill=green!30, align=center, font=\linespread{0.8}\selectfont\bfseries]
         \node (image2_boundary) [rectangle,line width=1mm,fill=black] at (0,0){};
     \end{tikzpicture}
 }
+\newsavebox\clustersahcohort\sbox\clustersahcohort{
+    \begin{tikzpicture}
+        %		\node (clusterone) [yshift=-70,scale=0.7,below=of sniprlogo] {\usebox\clusterone};
+
+
+        \node (image1) [scale=1,inner sep = 0pt] at (0,0)  {\usebox\sahclusterone};
+        %	\node (image1_boundary) [rectangle,line width=1mm,draw=green!50, fit={ (image1)}] {};
+        \node (image2) [scale=1, right=of image1, inner sep = 0pt,xshift=-18]  {\usebox\sahclusterthree};
+        %	\node (image2_boundary) [rectangle,line width=1mm,draw=green!50, fit={ (image2)}] {};
+        \node (image3) [scale=1, below=of image1, inner sep = 0pt,xshift=-18] {\usebox\sahclustertwo};
+        %		\node (image2_boundary) [rectangle,line width=1mm,draw=green!50, fit={ (image3)}] {};
+        \node (image4) [scale=1, below=of image2,  inner sep = 0pt,yshift=17]   {\usebox\sahclusterone};
+        %			\node (image2_boundary) [rectangle,line width=1mm,draw=green!50, fit={ (image4)}] {};
+        %		\node (image5) [scale=1, below=of image2,  inner sep = 0pt,yshift=17] {\usebox\clusterone};
+        %		%		\node (image2_boundary) [rectangle,line width=1mm,draw=green!50, fit={ (image5)}] {};
+        %		\node (image6) [scale=1, below=of image3, inner sep = 0pt,yshift=17]   {\usebox\clusterone};
+        \node (image2_boundary) [rectangle,line width=2mm,draw=blue!50, fit={(image1)(image2)(image3)(image4)}] {};
+        \node (image2_boundary) [rectangle,line width=1mm,fill=black] at (0,0){};
+    \end{tikzpicture}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newsavebox\classifiedimages\sbox\classifiedimages{
@@ -683,11 +756,11 @@ fill=green!30, align=center, font=\linespread{0.8}\selectfont\bfseries]
 %% Cohorts 	\node(unclassifiedimages)[scale=0.5,yshift=400]  {\usebox\unclassifiedimages };
         \node (clusterone) [yshift=-70,xshift=50,scale=0.4,below=of sniprlogo] {\usebox\clusterinfarctcohort}; %{\includegraphics[width=0.7\textwidth]{../images/grayscale_infarct.png}  };
         \node (clustertwo) [below=of clusterone,yshift=-50,scale=0.4] {\usebox\clusterichcohort};
-        \node (cluster3) [below=of clustertwo,yshift=-90,scale=0.4] {\usebox\clusterichcohort};
+        \node (cluster3) [below=of clustertwo,yshift=-90,scale=0.4] {\usebox\clustersahcohort};
 %% pre-classification image of a session
         \node (infarctgraygroup) [scale=0.7,right=of clusterone,xshift=200] {\usebox\unclassifiedimagesinfarct}; %{\includegraphics[width=0.7\textwidth]{../images/grayscale_infarct.png}  };
         \node (ichgraygroup) [scale=0.7,right=of clustertwo,xshift=200] {\usebox\ichclusterthree};
-        \node (sahgraygroup) [scale=0.7,right=of cluster3,xshift=200] {\usebox\ichclusterthree};
+        \node (sahgraygroup) [scale=0.7,right=of cluster3,xshift=200] {\usebox\sahclusterthree};
 % {\includegraphics[width=0.7\textwidth]{../images/grayscaleimage_ich.png}  };
 
 %%%%%%%%%%%% classified image
@@ -734,7 +807,7 @@ fill=green!30, align=center, font=\linespread{0.8}\selectfont\bfseries]
 %% connecting classified to segmentation
         \draw[->, -stealth, line width=5mm,draw=blue, right of=infarctgray] (infarctgray) -- (infarctseg);
         \draw[->, -stealth, line width=5mm,draw=green, right of=ichgray] (ichgray) -- (ichseg) ;
-		\draw[->, -stealth, line width=5mm,draw=green, right of=ichgray] (sahgray) -- (sahseg) ;
+		\draw[->, -stealth, line width=5mm,draw=violet, right of=ichgray] (sahgray) -- (sahseg) ;
 
 %%% connecting classified to DCM2NIFTI
 %\draw[->, -stealth, line width=5mm,draw=red, right of=infarctgray] (infarctgray) -- (dcm2nifti1); 	 
@@ -747,7 +820,7 @@ fill=green!30, align=center, font=\linespread{0.8}\selectfont\bfseries]
 
         \draw[->, -stealth, line width=5mm,draw=blue, right of=infarctseg] (csfseg1) -- (pdf1);
         \draw[->, -stealth, line width=5mm,draw=green, right of=infarctseg] (csfseg2) -- (pdf2);
-		\draw[->, -stealth, line width=5mm,draw=green, right of=infarctseg] (csfseg3) -- (pdf3);
+		\draw[->, -stealth, line width=5mm,draw=violet, right of=infarctseg] (csfseg3) -- (pdf3);
 
 %%%% text for cohort 
         \node (cohor_cluster_infarct) [textbox,draw=none,fill=none,   above of=clusterone,yshift=180,xshift=20,scale=2] {Ischemia cohort \\ (5771 sessions)};
